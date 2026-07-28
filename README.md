@@ -62,6 +62,4 @@ This repository is under active development. Features, systems, and project stru
 
 This project is currently not accepting external contributions.
 
-## License
 
-This project is licensed under the MIT License.
