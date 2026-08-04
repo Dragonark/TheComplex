@@ -1291,6 +1291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PickupObject
   handRequirement: 0
   gripPoint: {fileID: 1625896985}
+  modelRoot: {fileID: 1625896985}
 --- !u!54 &1625896981
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1682,6 +1683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PickupObject
   handRequirement: 1
   gripPoint: {fileID: 1741377098}
+  modelRoot: {fileID: 1741377098}
 --- !u!54 &1741377101
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1877,6 +1879,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlacementSystem
   playerPickup: {fileID: 1900555363}
+  playerCamera: {fileID: 330585545}
+  placementDistance: 5
+  placementOffset: 0.02
+  placementMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  validPlacementColor: {r: 0.35, g: 1, b: 0.6, a: 0.45}
+  invalidPlacementColor: {r: 1, g: 0.35, b: 0.35, a: 0.45}
 --- !u!1 &1910445540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1956,6 +1966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PickupObject
   handRequirement: 0
   gripPoint: {fileID: 1563973138}
+  modelRoot: {fileID: 1185146987}
 --- !u!54 &2137530537
 Rigidbody:
   m_ObjectHideFlags: 0

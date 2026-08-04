@@ -18,6 +18,11 @@ public class PickupObject : MonoBehaviour, IInteractable
 
     public Transform GripPoint => gripPoint;
 
+    [Header("Visual")]
+    [SerializeField] private Transform modelRoot;
+
+    public Transform ModelRoot => modelRoot;
+
 
 
     private void Awake()
@@ -76,9 +81,7 @@ public class PickupObject : MonoBehaviour, IInteractable
 
     public void SetVisible(bool visible)
     {
-        foreach (Renderer renderer in GetComponentsInChildren<Renderer>())
-        {
-            renderer.enabled = visible;
-        }
+        if (modelRoot != null)
+            modelRoot.gameObject.SetActive(visible);
     }
 }
